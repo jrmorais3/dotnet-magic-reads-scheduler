@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SF.Core.Domain;
+using SF_Manager.Interfaces;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace SF.WebApi.Controllers
 {
@@ -9,20 +10,23 @@ namespace SF.WebApi.Controllers
     [ApiController]
     public class VoluntariosController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult Get()
+        private readonly IVoluntarioManager voluntarioManager;
+
+        public VoluntariosController(IVoluntarioManager voluntarioManager)
         {
-            return Ok(new List<Voluntario>()
-            {
-                new Voluntario(){ Id = 1, Nome = "Marina Lima", DtaNascimento = new System.DateTime(2020, 6,1)},
-                new Voluntario(){ Id = 2, Nome = "Lara Matos", DtaNascimento = new System.DateTime(2020, 9,15)}
-            });
+            this.voluntarioManager = voluntarioManager;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await voluntarioManager.GetVoluntariosAsync());
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            return "value";
+            return Ok(await voluntarioManager.GetVoluntariosAsync(id));
         }
 
         [HttpPost]

@@ -5,6 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SF.Data.Context;
+using SF_Data.Repository;
+using SF_Manager.Implementation;
+using SF_Manager.Interfaces;
 
 namespace SF.WebApi
 {
@@ -20,6 +23,8 @@ namespace SF.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IVoluntarioRepository, VoluntarioRepository>();
+            services.AddScoped<IVoluntarioManager, VoluntarioManager>();
             services.AddDbContext<SFContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SFConnection")));
             services.AddSwaggerGen(s =>
             {

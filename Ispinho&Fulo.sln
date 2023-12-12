@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF-WebApi", "SF.WebApi\SF-WebApi.csproj", "{B466864C-2D1E-4861-8BBF-CCB6A3DEFD0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF_WebApi", "SF.WebApi\SF_WebApi.csproj", "{B466864C-2D1E-4861-8BBF-CCB6A3DEFD0C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - SF.WebApi", "1 - SF.WebApi", "{0EF4B767-2EBE-4808-88B8-54CB02728432}"
 EndProject
@@ -15,13 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - SF.Core", "4 - SF.Core"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - SF.Tests", "5 - SF.Tests", "{739E3A05-5CB2-4C0E-BC0B-645AD94B5C39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF-Manager", "SF.Manager\SF-Manager.csproj", "{9C10A802-8112-4CC8-A3BF-0861C63BE56B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF_Manager", "SF.Manager\SF_Manager.csproj", "{9C10A802-8112-4CC8-A3BF-0861C63BE56B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF-Data", "SF.Data\SF-Data.csproj", "{A37C2B8D-F481-4945-A848-86ADBE18F3EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF_Data", "SF.Data\SF_Data.csproj", "{A37C2B8D-F481-4945-A848-86ADBE18F3EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF-Core", "SF.Core\SF-Core.csproj", "{964B3368-1DC5-417E-A28D-9F188A0F0A27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF_Core", "SF.Core\SF_Core.csproj", "{964B3368-1DC5-417E-A28D-9F188A0F0A27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF-Tests", "SF.Tests\SF-Tests.csproj", "{84C80670-FCC3-43BC-BB4E-486A72055197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SF_Tests", "SF.Tests\SF_Tests.csproj", "{84C80670-FCC3-43BC-BB4E-486A72055197}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
