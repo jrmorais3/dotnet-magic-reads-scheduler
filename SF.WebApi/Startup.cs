@@ -26,6 +26,15 @@ namespace SF.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1",
+                             new Microsoft.OpenApi.Models.OpenApiInfo
+                             {
+                                 Title = "Sítio Ispinho & Fulô",
+                                 Version = "v1"
+                             });
+             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +50,14 @@ namespace SF.WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(s =>
+            {
+                s.RoutePrefix = string.Empty;
+                s.SwaggerEndpoint("./swagger/v1/swagger.json","SF V1");
+            });
 
             app.UseEndpoints(endpoints =>
             {
