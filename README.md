@@ -1,6 +1,6 @@
 # Customer Schedule
 
-Customer schedule application builded during course of [Francis Silveira Andrade](https://github.com/fsandrade) on his youtube channel.
+Customer scheduling application built during [Francis Silveira Andrade's](https://github.com/fsandrade) course on his YouTube channel.
 
 ## Getting Started
 
