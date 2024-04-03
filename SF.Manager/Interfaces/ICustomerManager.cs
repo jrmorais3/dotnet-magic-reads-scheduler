@@ -1,8 +1,8 @@
-﻿using SF.Core.Domain;
+﻿using Core.Domain;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SF_Manager.Interfaces
+namespace Interfaces
 {
     public interface ICustomerManager
     {

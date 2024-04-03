@@ -1,9 +1,9 @@
-﻿using SF.Core.Domain;
-using SF_Manager.Interfaces;
+﻿using Core.Domain;
+using Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SF_Manager.Implementation
+namespace Implementation
 {
     public class VoluntarioManager : ICustomerManager
     {

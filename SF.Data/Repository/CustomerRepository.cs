@@ -1,11 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SF.Core.Domain;
-using SF.Data.Context;
-using SF_Manager.Interfaces;
+﻿using Core.Domain;
+using Data.Context;
+using Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SF_Data.Repository
+namespace Repository
 {
     public class CustomerRepository : ICustomerRepository
     {

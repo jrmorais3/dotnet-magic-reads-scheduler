@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SF.Core.Domain;
+﻿using Core.Domain;
+using Microsoft.EntityFrameworkCore;
 
-namespace SF.Data.Context
+namespace Data.Context
 {
     public class CSContext : DbContext
     {

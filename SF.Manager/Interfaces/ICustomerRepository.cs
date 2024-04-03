@@ -1,9 +1,8 @@
-﻿using SF.Core.Domain;
-using System;
+﻿using Core.Domain;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SF_Manager.Interfaces
+namespace Interfaces
 {
     public interface ICustomerRepository
     {

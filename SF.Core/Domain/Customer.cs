@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SF.Core.Domain
+namespace Core.Domain
 {
     public class Customer
     {
