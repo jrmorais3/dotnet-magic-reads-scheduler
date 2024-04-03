@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SF.Core\SF_Core.csproj" />
-    <ProjectReference Include="..\SF.Data\SF_Data.csproj" />
+    <ProjectReference Include="..\SF.Core\Core.csproj" />
+    <ProjectReference Include="..\SF.Data\Data.csproj" />
   </ItemGroup>
 
 

@@ -9,7 +9,7 @@ using SF.Data.Context;
 
 namespace SFData.Migrations
 {
-    [DbContext(typeof(SFContext))]
+    [DbContext(typeof(CSContext))]
     [Migration("20231212195131_firstCommit")]
     partial class firstCommit
     {

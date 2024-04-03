@@ -4,29 +4,29 @@ using SF_Manager.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SF.WebApi.Controllers
+namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VoluntariosController : ControllerBase
+    public class CustomerController : ControllerBase
     {
-        private readonly IVoluntarioManager voluntarioManager;
+        private readonly ICustomerManager customerManager;
 
-        public VoluntariosController(IVoluntarioManager voluntarioManager)
+        public CustomerController(ICustomerManager customerManager)
         {
-            this.voluntarioManager = voluntarioManager;
+            this.customerManager = customerManager;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await voluntarioManager.GetVoluntariosAsync());
+            return Ok(await customerManager.GetCustomerAsync());
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(await voluntarioManager.GetVoluntariosAsync(id));
+            return Ok(await customerManager.GetCustomerAsync(id));
         }
 
         [HttpPost]

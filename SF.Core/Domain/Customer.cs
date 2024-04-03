@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SF.Core.Domain
 {
-    public class Voluntario
+    public class Customer
     {
         public int Id { get; set; }
         public string Nome { get; set; }

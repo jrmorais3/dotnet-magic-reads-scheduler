@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SF.Core\SF_Core.csproj" />
-    <ProjectReference Include="..\SF.Manager\SF_Manager.csproj" />
+    <ProjectReference Include="..\SF.Core\Core.csproj" />
+    <ProjectReference Include="..\SF.Manager\Manager.csproj" />
   </ItemGroup>
 
 </Project>

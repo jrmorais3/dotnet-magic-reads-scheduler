@@ -8,7 +8,7 @@ using SF.Data.Context;
 
 namespace SFData.Migrations
 {
-    [DbContext(typeof(SFContext))]
+    [DbContext(typeof(CSContext))]
     partial class SFContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

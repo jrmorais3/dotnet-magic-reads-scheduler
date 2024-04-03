@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace SF_Data.Repository
 {
-    public class VoluntarioRepository : IVoluntarioRepository
+    public class CustomerRepository : ICustomerRepository
     {
-        private readonly SFContext context;
+        private readonly CSContext context;
 
-        public VoluntarioRepository(SFContext context)
+        public CustomerRepository(CSContext context)
         {
             this.context = context;
         }
 
-        public async Task<IEnumerable<Voluntario>> GetVoluntariosAsync()
+        public async Task<IEnumerable<Customer>> GetVoluntariosAsync()
         {
             return await context.Voluntarios.AsNoTracking().ToListAsync();
         }
 
-        public async Task<Voluntario> GetVoluntariosAsync(int id)
+        public async Task<Customer> GetVoluntariosAsync(int id)
         {
             return await context.Voluntarios.FindAsync(id);
         }

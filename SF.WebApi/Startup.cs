@@ -23,15 +23,15 @@ namespace SF.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IVoluntarioRepository, VoluntarioRepository>();
-            services.AddScoped<IVoluntarioManager, VoluntarioManager>();
-            services.AddDbContext<SFContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SFConnection")));
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<ICustomerManager, VoluntarioManager>();
+            services.AddDbContext<CSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CSConnection")));
             services.AddSwaggerGen(s =>
             {
                 s.SwaggerDoc("v1",
                              new Microsoft.OpenApi.Models.OpenApiInfo
                              {
-                                 Title = "Sítio Ispinho & Fulô",
+                                 Title = "Customer Scheduler",
                                  Version = "v1"
                              });
              });
@@ -55,7 +55,7 @@ namespace SF.WebApi
             app.UseSwaggerUI(s =>
             {
                 s.RoutePrefix = string.Empty;
-                s.SwaggerEndpoint("./swagger/v1/swagger.json","SF V1");
+                s.SwaggerEndpoint("./swagger/v1/swagger.json","CS V1");
             });
 
             app.UseEndpoints(endpoints =>
