@@ -2,6 +2,11 @@
 
 Customer scheduling application built during [Francis Silveira Andrade's](https://github.com/fsandrade) course on his YouTube channel.
 
+### Technologies
+- Net Core
+- Entity Framework Core
+- Swashbuckle API documentation and playground
+
 ## Getting Started
 
 Working in progress.
