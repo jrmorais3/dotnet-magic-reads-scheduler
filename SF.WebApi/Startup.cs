@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SF.Data.Context;
-using SF_Data.Repository;
-using SF_Manager.Implementation;
-using SF_Manager.Interfaces;
+using Data.Context;
+using Repository;
+using Implementation;
+using Interfaces;
 
 namespace SF.WebApi
 {

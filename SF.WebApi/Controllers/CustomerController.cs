@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SF.Core.Domain;
-using SF_Manager.Interfaces;
-using System.Collections.Generic;
+﻿using Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace WebApi.Controllers
