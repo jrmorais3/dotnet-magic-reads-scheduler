@@ -7,7 +7,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "SF.WebApi": {
+    "WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

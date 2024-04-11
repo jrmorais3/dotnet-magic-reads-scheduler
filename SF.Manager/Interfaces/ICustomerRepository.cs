@@ -6,7 +6,7 @@ namespace Interfaces
 {
     public interface ICustomerRepository
     {
-        Task<Customer> GetVoluntariosAsync(int id);
-        Task<IEnumerable<Customer>> GetVoluntariosAsync();
+        Task<Customer> GetCustomerAsync(int id);
+        Task<IEnumerable<Customer>> GetCustomersAsync();
     }
 }

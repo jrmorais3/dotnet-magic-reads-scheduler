@@ -16,12 +16,12 @@ namespace Repository
             this.context = context;
         }
 
-        public async Task<IEnumerable<Customer>> GetVoluntariosAsync()
+        public async Task<IEnumerable<Customer>> GetCustomersAsync()
         {
             return await context.Voluntarios.AsNoTracking().ToListAsync();
         }
 
-        public async Task<Customer> GetVoluntariosAsync(int id)
+        public async Task<Customer> GetCustomerAsync(int id)
         {
             return await context.Voluntarios.FindAsync(id);
         }

@@ -5,23 +5,23 @@ using System.Threading.Tasks;
 
 namespace Implementation
 {
-    public class VoluntarioManager : ICustomerManager
+    public class CustomerManager : ICustomerManager
     {
         private readonly ICustomerRepository voluntarioRepository;
 
-        public VoluntarioManager(ICustomerRepository voluntarioRepository)
+        public CustomerManager(ICustomerRepository customerRepository)
         {
-            this.voluntarioRepository = voluntarioRepository;
+            this.voluntarioRepository = customerRepository;
         }
 
         public async Task<IEnumerable<Customer>> GetCustomerAsync()
         {
-            return await voluntarioRepository.GetVoluntariosAsync();
+            return await voluntarioRepository.GetCustomersAsync();
         }
 
         public async Task<Customer> GetCustomerAsync(int id)
         {
-            return await voluntarioRepository.GetVoluntariosAsync(id);
+            return await voluntarioRepository.GetCustomerAsync(id);
         }
     }
 }

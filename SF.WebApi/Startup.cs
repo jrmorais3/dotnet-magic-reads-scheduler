@@ -24,7 +24,7 @@ namespace SF.WebApi
         {
             services.AddControllers();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<ICustomerManager, VoluntarioManager>();
+            services.AddScoped<ICustomerManager, CustomerManager>();
             services.AddDbContext<CSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CSConnection")));
             services.AddSwaggerGen(s =>
             {
