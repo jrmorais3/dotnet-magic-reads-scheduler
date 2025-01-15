@@ -6,14 +6,9 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class ReadersController(ICustomerManager customerManager) : ControllerBase
     {
-        private readonly ICustomerManager customerManager;
-
-        public CustomerController(ICustomerManager customerManager)
-        {
-            this.customerManager = customerManager;
-        }
+        private readonly ICustomerManager customerManager = customerManager;
 
         [HttpGet]
         public async Task<IActionResult> Get()
