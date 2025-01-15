@@ -6,20 +6,20 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ReadersController(ICustomerManager customerManager) : ControllerBase
+    public class ReadersController(IReaderManager ReaderManager) : ControllerBase
     {
-        private readonly ICustomerManager customerManager = customerManager;
+        private readonly IReaderManager ReaderManager = ReaderManager;
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await customerManager.GetCustomerAsync());
+            return Ok(await ReaderManager.GetReaderAsync());
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(await customerManager.GetCustomerAsync(id));
+            return Ok(await ReaderManager.GetReaderAsync(id));
         }
 
         [HttpPost]
