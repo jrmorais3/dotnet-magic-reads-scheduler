@@ -25,7 +25,7 @@ namespace SF.WebApi
             services.AddControllers();
             services.AddScoped<IReaderRepository, ReaderRepository>();
             services.AddScoped<IReaderManager, ReaderManager>();
-            services.AddDbContext<MRSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CSConnection")));
+            services.AddDbContext<MRSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MRSConnection")));
             services.AddSwaggerGen(s =>
             {
                 s.SwaggerDoc("v1",
@@ -55,7 +55,7 @@ namespace SF.WebApi
             app.UseSwaggerUI(s =>
             {
                 s.RoutePrefix = string.Empty;
-                s.SwaggerEndpoint("./swagger/v1/swagger.json","CS V1");
+                s.SwaggerEndpoint("./swagger/v1/swagger.json","MRS V1");
             });
 
             app.UseEndpoints(endpoints =>
