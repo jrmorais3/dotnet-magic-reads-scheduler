@@ -5,23 +5,18 @@ using System.Threading.Tasks;
 
 namespace Implementation
 {
-    public class ReaderManager : IReaderManager
+    public class ReaderManager(IReaderRepository ReaderRepository) : IReaderManager
     {
-        private readonly IReaderRepository voluntarioRepository;
-
-        public ReaderManager(IReaderRepository ReaderRepository)
-        {
-            this.voluntarioRepository = ReaderRepository;
-        }
+        private readonly IReaderRepository readerRepository = ReaderRepository;
 
         public async Task<IEnumerable<Reader>> GetReaderAsync()
         {
-            return await voluntarioRepository.GetReadersAsync();
+            return await readerRepository.GetReadersAsync();
         }
 
         public async Task<Reader> GetReaderAsync(int id)
         {
-            return await voluntarioRepository.GetReaderAsync(id);
+            return await readerRepository.GetReaderAsync(id);
         }
     }
 }
