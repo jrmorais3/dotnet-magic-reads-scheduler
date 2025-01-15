@@ -22,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
-    <ProjectReference Include="..\Data\Data.csproj" />
-    <ProjectReference Include="..\Tests\Tests.csproj" />
+    <ProjectReference Include="..\Core\4. Core.csproj" />
+    <ProjectReference Include="..\Data\3. Data.csproj" />
+    <ProjectReference Include="..\Tests\5. Tests.csproj" />
   </ItemGroup>
 
 

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{3E659773-F329-4E28-BDD3-C5B4283ADAEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4. Core", "Core\4. Core.csproj", "{3E659773-F329-4E28-BDD3-C5B4283ADAEB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{71DF0FE2-06D7-43AF-94F8-BBBDB21263E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Data", "Data\3. Data.csproj", "{71DF0FE2-06D7-43AF-94F8-BBBDB21263E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager", "Manager\Manager.csproj", "{8530FC9A-77CE-4A73-A257-3C4DE9EFFCEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Manager", "Manager\2. Manager.csproj", "{8530FC9A-77CE-4A73-A257-3C4DE9EFFCEF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{11F8B458-F219-4E9F-AE0D-E989269F9A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. WebApi", "WebApi\1. WebApi.csproj", "{11F8B458-F219-4E9F-AE0D-E989269F9A00}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{7CCFC4A4-4011-4C7F-B373-ED8427BBBF17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. Tests", "Tests\5. Tests.csproj", "{7CCFC4A4-4011-4C7F-B373-ED8427BBBF17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

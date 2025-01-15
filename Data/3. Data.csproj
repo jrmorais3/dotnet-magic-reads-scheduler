@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
-    <ProjectReference Include="..\Manager\Manager.csproj" />
+    <ProjectReference Include="..\Core\4. Core.csproj" />
+    <ProjectReference Include="..\Manager\2. Manager.csproj" />
   </ItemGroup>
 
 </Project>
