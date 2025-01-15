@@ -23,15 +23,15 @@ namespace SF.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<ICustomerManager, CustomerManager>();
-            services.AddDbContext<CSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CSConnection")));
+            services.AddScoped<IReaderRepository, ReaderRepository>();
+            services.AddScoped<IReaderManager, ReaderManager>();
+            services.AddDbContext<MRSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CSConnection")));
             services.AddSwaggerGen(s =>
             {
                 s.SwaggerDoc("v1",
                              new Microsoft.OpenApi.Models.OpenApiInfo
                              {
-                                 Title = "Customer Scheduler",
+                                 Title = "Reader Scheduler",
                                  Version = "v1"
                              });
              });
