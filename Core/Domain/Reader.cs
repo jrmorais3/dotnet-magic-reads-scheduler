@@ -2,7 +2,7 @@
 
 namespace Core.Domain
 {
-    public class Customer
+    public class Reader
     {
         public int Id { get; set; }
         public string Name { get; set; }
